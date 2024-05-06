@@ -29,6 +29,7 @@ header{
     left:0;
     width: 100%;
     z-index: 900;
+    box-shadow: rgba(0,0,0,0.2) 3px 4px 4px 0;
 }
 
 .container {
@@ -147,33 +148,27 @@ div.consumer > ul li a, div.icons > ul li a, div.info > ul li a {
     color: red;
 }
 
-
-
 /* proprietà generali del footer */
 
 .footer-content{
     display: flex;
-    justify-content: flex-start;
-    margin: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 18px 0;
 }
 
 footer{
     color: white;
 }
+
 #footer-nav{
     background-color: #1A1A1A;
-    height: 80px;
+    height: 100px;
 }
 
-.copyright{
+.copyright, .social{
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     line-height: 30px;
 }
-
-.icon-social ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
