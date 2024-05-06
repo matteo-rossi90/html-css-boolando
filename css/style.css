@@ -1,0 +1,6 @@
+/* proprietà generali di base */
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
