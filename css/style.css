@@ -17,7 +17,20 @@ li a{
     width: 80%;
 }
 
+#container-main{
+    padding-top: 60px;
+}
+
 /* proprietà generali barra di navigazione */
+
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index: 900;
+}
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -89,7 +102,7 @@ div.consumer > ul li a, div.icons > ul li a, div.info > ul li a {
     width: 33%;
     height: 50px;
     background-color: yellow;
-    margin: 0 10px; 
+    margin: 0 10px 20px 10px; 
 }
 
 .card{
@@ -98,6 +111,10 @@ div.consumer > ul li a, div.icons > ul li a, div.info > ul li a {
     width: 33%;
     min-height: 500px;
     background-color: #EBECE9;
+}
+
+.card img{
+    width: 100%;
 }
 
 /* proprietà generali del footer */
