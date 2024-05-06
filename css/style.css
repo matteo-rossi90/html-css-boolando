@@ -12,19 +12,29 @@ li a{
     color: white;
 }
 
-/* proprietà barra di navigazione */
-.container-nav{
+.container, #container-main{
     margin: 0 auto;
     width: 80%;
+}
+
+/* proprietà generali barra di navigazione */
+.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+
 #navbar{
     height: 60px;
     background-color: #FF6900;
     color: white;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
 }
 
 /* definizione colonne della barra di navigazione */
@@ -33,26 +43,73 @@ li a{
     justify-content: center;
     align-items: center;
     /* debug */
-    width: 25%;
-    height: 30px;
-    background-color:goldenrod;
-    border: 1px black solid;
+    /* width: 25%; */
+    /* height: 30px; */
+    line-height: 30px;
+    /* background-color:goldenrod; */
+    /* border: 1px black solid; */
+    margin: 13px 0;
+    font-weight: 500;
+}
+
+/* proprietà liste */
+div.consumer > ul li a, div.icons > ul li a, div.info > ul li a {
+    margin: 0 10px 0 0;
+    font-size: 13px;
+}
+
+/* definizione logo barra di navigazione */
+.center img{
+    width: 15%;
+}
+
+/* prorpietà parte centrale */
+#container-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row{
+    display: flex;
+    /* background-color: yellow; */
+    width: 100%;
+    height: 100%;
+}
+
+.card{
+    margin: 20px 20px;
+    width: 33%;
+    min-height: 500px;
+    background-color: #EBECE9;
+}
+
+/* proprietà generali del footer */
+
+.footer-content{
+    display: flex;
+    justify-content: flex-start;
     margin: 10px 0;
 }
 
-.center{
-    width: 50%;
-    padding: 0;
+footer{
+    color: white;
+}
+#footer-nav{
+    background-color: #1A1A1A;
+    height: 80px;
 }
 
-div.consumer ul, div.icons ul{
+.copyright{
     display: flex;
-    align-items: center;
-    color: black;
-    padding: 0;
+    flex-direction:column;
+    line-height: 30px;
 }
 
-.consumer ul li a, .icons ul li a {
-    margin: 0 10px;
+.icon-social ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
