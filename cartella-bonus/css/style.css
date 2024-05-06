@@ -130,6 +130,10 @@ div.card:hover .image-hover{
     width: 100%;
 }
 
+.heart:hover{
+    color: red;
+}
+
 img.image-hover{
     position: absolute;
     display: none;
