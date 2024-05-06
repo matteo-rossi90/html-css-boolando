@@ -98,24 +98,56 @@ div.consumer > ul li a, div.icons > ul li a, div.info > ul li a {
 }
 
 .text-box{
-    display: flex;
     width: 33%;
-    height: 50px;
-    background-color: yellow;
-    margin: 0 10px 20px 10px; 
+    /* height: 50px; */
+    /* background-color: yellow; */
+    margin: 0 10px 20px 0; 
 }
 
 .card{
     display: flex;
-    margin: 0 10px;
+    margin: 0 10px 0 0;
     width: 33%;
-    min-height: 500px;
+    /* min-height: 500px; */
+    position: relative;
     background-color: #EBECE9;
 }
 
 .card img{
     width: 100%;
 }
+
+.label, .label-green, #label-green-2{
+    position: absolute;
+    padding: 2px 4px;
+    color: white
+
+}
+.label, #label-green-2{
+    left: 0;
+    bottom: 25px;
+}
+
+.label{
+    background-color: red;
+}
+
+.label-green{
+    left: 50px;
+    bottom: 25px;
+    background-color: green;
+}
+
+#label-green-2{
+    background-color: green;
+}
+
+.price{
+    font-weight: 500;
+    color: red;
+}
+
+
 
 /* proprietà generali del footer */
 
