@@ -112,16 +112,48 @@ div.consumer > ul li a, div.icons > ul li a, div.info > ul li a {
     /* min-height: 500px; */
     position: relative;
     background-color: #EBECE9;
+    cursor:pointer;
+}
+
+div.card:hover .image-hover{
+    display: block;
+    z-index: 100;
 }
 
 .card img{
     width: 100%;
 }
 
+.box-heart{
+    position: absolute;
+    right: 0;
+    top: 20px;
+    background-color: white;
+    width: 45px;
+    height: 45px;
+    z-index: 200;
+}
+
+.heart{
+    text-align: center;
+    line-height: 45px;
+    font-size: 35px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+img.image-hover{
+    position: absolute;
+    display: none;
+    z-index: -1;
+}
+
 .label, .label-green, #label-green-2{
     position: absolute;
     padding: 2px 4px;
-    color: white
+    color: white;
+    z-index: 200;
 
 }
 .label, #label-green-2{
@@ -172,3 +204,4 @@ footer{
     flex-direction: column;
     line-height: 30px;
 }
+
