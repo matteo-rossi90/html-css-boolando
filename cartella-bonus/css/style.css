@@ -1,0 +1,194 @@
+/* proprietà generali di base */
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family:'Roboto', 'Arial Narrow', Arial, sans-serif
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+}
+
+.container, #container-main{
+    margin: 0 auto;
+    width: 80%;
+}
+
+#container-main{
+    padding-top: 60px;
+}
+
+/* proprietà generali barra di navigazione */
+
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index: 900;
+    box-shadow: rgba(0,0,0,0.2) 0 4px 4px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#navbar{
+    height: 60px;
+    background-color: #FF6900;
+    color: white;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+/* definizione colonne della barra di navigazione */
+.col-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+    margin: 13px 0;
+    font-weight: 500;
+}
+
+/* proprietà liste */
+div.consumer > ul li a, div.icons > ul li a, div.info > ul li a {
+    margin: 0 10px 0 0;
+    font-size: 13px;
+}
+
+/* definizione logo barra di navigazione */
+.center img{
+    width: 15%;
+}
+
+/* prorpietà parte centrale */
+
+.card-container{
+    margin: 50px 0;
+}
+.row{
+    display: flex;
+    margin: 10px 0;
+}
+
+.row-text {
+    display: flex;
+    margin: 10px 0;
+}
+
+.text-box{
+    width: 33%;
+    margin: 0 10px 20px 0; 
+}
+
+.card{
+    display: flex;
+    margin: 0 10px 0 0;
+    width: 33%;
+    position: relative;
+    background-color: #EBECE9;
+    cursor:pointer;
+}
+
+div.card:hover .image-hover{
+    display: block;
+    z-index: 100;
+}
+
+.card img{
+    width: 100%;
+}
+
+.box-heart{
+    position: absolute;
+    right: 0;
+    top: 20px;
+    background-color: white;
+    width: 45px;
+    height: 45px;
+    z-index: 200;
+}
+
+.heart{
+    text-align: center;
+    line-height: 45px;
+    font-size: 30px;
+    margin: 0 2px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+img.image-hover{
+    position: absolute;
+    display: none;
+    z-index: -1;
+}
+
+.label, .label-green, #label-green-2{
+    position: absolute;
+    padding: 2px 4px;
+    color: white;
+    z-index: 200;
+
+}
+.label, #label-green-2{
+    left: 0;
+    bottom: 25px;
+}
+
+.label{
+    background-color: red;
+}
+
+.label-green{
+    left: 50px;
+    bottom: 25px;
+    background-color: green;
+}
+
+#label-green-2{
+    background-color: green;
+}
+
+.price{
+    font-weight: 500;
+    color: red;
+}
+
+/* proprietà generali del footer */
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 18px 0;
+}
+
+footer{
+    color: white;
+}
+
+#footer-nav{
+    background-color: #1A1A1A;
+    height: 100px;
+}
+
+.copyright, .social{
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+}
+
